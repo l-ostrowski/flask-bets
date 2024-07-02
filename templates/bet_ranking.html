@@ -1,0 +1,32 @@
+{% extends "bet_base.html" %}
+
+{% block title %} Matches {% endblock %}
+
+{% block content %} 
+
+<div class="container">
+    <table class="table" style="width:70%" id="mytab">
+ 
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Points</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+            {% for r in ranking %}
+          <tr>
+            <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.rank }}</td>
+            <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.nick }}</td>
+            <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.points }}</td>
+          </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+
+
+{% endblock %}

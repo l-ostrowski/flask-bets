@@ -1,0 +1,53 @@
+{% extends "bet_base.html" %}
+
+{% block title %} Matches {% endblock %}
+
+{% block content %} 
+
+<div class="container">
+  <!-- <a href="#" class="btn btn-secondary btn-lg" role="button">Edit</a> -->
+  <form id="exchange_form" action="{{url_for('ranking_live')}}" method="POST"> 
+    <div class="col-8"> 
+      <a href="{{ url_for('ranking_live') }}" class="btn btn-secondary btn-lg" role="button">Cancel</a>
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button> 
+    </div>
+    <table class="table" style="width:1000px">
+
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Gr.</th>
+          <th scope="col"></th>
+          <th scope="col" colspan="3" class="text-center" >Your bet</th>
+          <th scope="col"></th>
+          <th scope="col" colspan="3" class="text-center">Live Result</th>
+          <th scope="col" class="text-center">Points</th>
+        </tr>
+      </thead>
+
+        <tbody>
+            {% for m in matches %}
+          <tr>
+            <td scope="row" style="width:20%">{{ m.match_date }}</td>
+            <td style="width:1%">{{ m.match_group }}</td>
+            <td class="text-end">{{ m.team1 }}</td>
+            <td class="table-active" style="width:5%">
+              <input type="number" min="0" max="9" step="1" id="team1_res" name="team1_res"  class="form-control form-control-sm" value="{{ m.team1_res }}" disabled>
+            </td>
+            <td class="table-active" style="width:1%">:</td>
+            <td class="table-active" style="width:5%">
+                <input type="number" min="0" max="9" step="1" id="team2_res" name="team2_res"  class="form-control form-control-sm" value="{{ m.team2_res }}" disabled>
+            </td>
+            <td>{{ m.team2 }}</td>
+            <td class="table-info" style="width:5%"><input type="number" min="0" max="9" step="1" id="{{m.match_id}}_team1_res" name="{{m.match_id}}_team1_res" class="form-control form-control-sm" value="{{ m.team1_rres }}" enabled></td>
+            <td class="table-info" style="width:1%">:</td>
+            <td class="table-info" style="width:5%"><input type="number" min="0" max="9" step="1" id="{{m.match_id}}_team2_res" name="{{m.match_id}}_team2_res" class="form-control form-control-sm" value="{{ m.team2_rres }}" enabled></td>
+            <td class="table-info text-center" style="width:6%">{{ (m.points_draw + m.points_win + m.points_lucky_loser + m.points_bonus) if m.team1_rres is not none else '' }}</td>
+          </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  </form>
+  <!-- {{my_list}} -->
+</div>
+{% endblock %}
