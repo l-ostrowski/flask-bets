@@ -103,7 +103,7 @@ class UserPass:
 sql_select='select * from v_user_matches where user_id=?'
 sql_select_ranking='select * from v_rank'
 sql_match_date = 'select min(match_date) as match_dt_check from v_user_matches where disabled=""'
-sql_select_results='select * from v_user_matches order by match_group, match_id, name'
+sql_select_results='select * from v_user_matches where match_date < strftime("%d-%m-%Y %H:%M", datetime("now","+2 hour")) order by match_group, match_id, name'
 sql_select_live='select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
 sql_select_ranking_live='select * from v_rank_live'
 

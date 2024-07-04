@@ -180,6 +180,17 @@ values (43, '2024-07-02 18:00:00', '1/8', 'Romania', 'Netherlands');
 insert into matches (id, match_date, match_group, team1, team2)
 values (44, '2024-07-02 21:00:00', '1/8', 'Austria', 'Turkey');
 
+--1/4
+insert into matches (id, match_date, match_group, team1, team2)
+values (45, '2024-07-05 18:00:00', '1/4', 'Spain', 'Germany');
+insert into matches (id, match_date, match_group, team1, team2)
+values (46, '2024-07-05 21:00:00', '1/4', 'Portugal', 'France');
+insert into matches (id, match_date, match_group, team1, team2)
+values (47, '2024-07-06 18:00:00', '1/4', 'England', 'Switzerland');
+insert into matches (id, match_date, match_group, team1, team2)
+values (48, '2024-07-06 21:00:00', '1/4', 'Netherlands', 'Turkey');
+
+
 update matches set points_multiplier=1
 update matches set points_multiplier=2 where id >= 37
 
@@ -221,6 +232,12 @@ update matches set team1_res=2, team2_res=0 where id=35;
 update matches set team1_res=1, team2_res=2 where id=36;
 update matches set team1_res=0, team2_res=2 where id=37;
 update matches set team1_res=2, team2_res=0 where id=38;
+update matches set team1_res=1, team2_res=1 where id=39;
+update matches set team1_res=4, team2_res=1 where id=40;
+update matches set team1_res=1, team2_res=0 where id=41;
+update matches set team1_res=0, team2_res=0 where id=42;
+update matches set team1_res=0, team2_res=3 where id=43;
+update matches set team1_res=1, team2_res=2 where id=44;
 
 update matches_live set points_multiplier=1
 update matches_live set points_multiplier=2 where id >= 37
@@ -283,6 +300,10 @@ select cnt.i as user_id, id, match_date, match_group, team1, team2
 from matches left join cnt 
 where id>36;
 
-update user_matches
-set match_date = '2024-06-30 21:00:00'
-where match_id =40
+/*zaladowanie meczow 1/4 dla kazdego usera*/
+WITH RECURSIVE 
+  cnt(i) AS (VALUES(1) UNION ALL SELECT i+1 FROM cnt WHERE i < 15) 
+insert into user_matches (user_id, match_id, match_date, match_group, team1, team2)
+select cnt.i as user_id, id, match_date, match_group, team1, team2 
+from matches left join cnt 
+where id>44;

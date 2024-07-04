@@ -5,7 +5,11 @@
 {% block content %} 
 
 <div class="container">
-  <a href="{{ url_for('edit_live') }}" class="btn btn-secondary btn-lg" role="button">Edit Live Results</a>
+  {% if matches %}
+    <a href="{{ url_for('edit_live') }}" class="btn btn-primary btn-lg" role="button">Edit Live Results</a>
+  {% else %}
+    <a href="{{ url_for('edit_live') }}" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Edit Live Results</a>
+  {% endif %}
     <table class="table" style="width:1000px">
  
         <thead>
