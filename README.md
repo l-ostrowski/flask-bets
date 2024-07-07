@@ -1,5 +1,6 @@
 /**** Server preparation *****/  
 --install python (on Ubuntu is installed by deafult)  
+--install git (on Ubuntu is installed by deafult)  
 sudo apt-get update  
 sudo apt-get upgrade  
 sudo apt install python3.8-venv  
