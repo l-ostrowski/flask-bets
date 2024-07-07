@@ -15,12 +15,13 @@ pip3 install --upgrade pip
 pip install -r requirements.txt
 
 /**** test flask app *****/  
+cd /home/python/projects/flask-bets  
 export FLASK_DEBUG=1  
 export FLASK_APP=bets.py  
 flask run --host=0.0.0.0 --port=3000  
 
---you must open port 3000 on your VM first  
---go to http://<yourIP>:3000 and check if app works  
+--open port 3000 on your VM    
+--go to http://'<yourIP>':3000 and check if app works  
 
 /**** NGINX *****/  
 sudo apt install nginx  
