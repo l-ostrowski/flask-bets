@@ -26,8 +26,8 @@ def close_db(error):
     if hasattr(g, 'sqlite.db'):
         g.sqlite_db.close()
 
-#if __name__ == '__main__':
-#    app.run(host='0.0.0.0', port=3000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
 
 
 class UserPass:
