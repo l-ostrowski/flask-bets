@@ -27,6 +27,18 @@ flask run --host=0.0.0.0 --port=3000
 
 <b>/**** NGINX *****/</b>    
 sudo apt install nginx  
-copy bets.conf file to /etc/nginx/sites-available/  
+sudo cp ./projects/flask-bets/nginxfiles/bets.conf /etc/nginx/sites-available/
+update /etc/nginx/sites-available/bets.conf with your IP (use sudo)
 sudo ln -s /etc/nginx/sites-available/bets.conf /etc/nginx/sites-enabled/bets.conf  
 sudo systemctl restart nginx  
+
+--open ports 80 and 8080 on your VM    
+--go to http://XXX.XXX.XXX.XXX and check response from NGINX - at this moment you should get error 502 Bad Gateway (XXX.XXX.XXX.XXX is your IP) 
+
+<b>/**** run gunicorn *****/</b>   
+source ~/projects/flask-bets/env/bin/activate  
+cd /home/python/projects/flask-bets  
+source startup.txt  
+
+--go to http://XXX.XXX.XXX.XXX and check if your app is running  
+--you can close your session, unicorn process should stay active, you can check it on new session with  ps ax|grep gunicorn command 
