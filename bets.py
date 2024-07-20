@@ -100,12 +100,14 @@ class UserPass:
             self.email = db_user['email']
             self.id = db_user['id']
 
-sql_select='select * from v_user_matches where user_id=?'
-sql_select_ranking='select * from v_rank'
+sql_select = 'select * from v_user_matches where user_id=?'
+sql_select_ranking = 'select * from v_rank'
 sql_match_date = 'select min(match_date) as match_dt_check from v_user_matches where disabled=""'
-sql_select_results='select * from v_user_matches where match_date < strftime("%d-%m-%Y %H:%M", datetime("now","+2 hour")) order by match_group, match_id, name'
-sql_select_live='select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
-sql_select_ranking_live='select * from v_rank_live'
+sql_select_results = 'select * from v_user_matches where match_date < strftime("%d-%m-%Y %H:%M", datetime("now","+2 hour")) order by match_group, match_id, name'
+sql_select_live = 'select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
+sql_select_ranking_live ='select * from v_rank_live'
+sql_select_teams = 'select distinct team from (select team1 as team from matches union select team2 as team from matches)'
+
 
 ###########################################################################
 ###############             EURO2024 BETS          ########################
@@ -287,3 +289,19 @@ def logout():
         session.pop('user', None)
         flash('You are logged out')
     return redirect(url_for('login'))
+
+####################################
+# BONUSES
+####################################
+@app.route('/bonuses')
+def bonuses():
+        
+    login = UserPass(session.get('user'))
+    login.get_user_info()
+    if not login.is_valid:
+        return redirect(url_for('login')) 
+    
+    db = get_db()
+    cur = db.execute(sql_select_teams)
+    teams=cur.fetchall()
+    return render_template('bet_bonuses.html', teams=teams, active_bonuses='active', login=login )

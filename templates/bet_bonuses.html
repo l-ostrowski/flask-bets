@@ -1,0 +1,14 @@
+{% extends "bet_base.html" %}
+
+{% block title %} Matches {% endblock %}
+
+{% block content %} 
+
+<select class="form-select mb-1" aria-label="Champion">
+  <option selected>Select Champion</option>
+  {% for m in teams %}
+    <option value="{{ m.team }}">{{ m.team }}</option>
+  {% endfor %}
+</select>
+
+{% endblock %}
