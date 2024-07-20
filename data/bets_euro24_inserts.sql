@@ -190,9 +190,21 @@ values (47, '2024-07-06 18:00:00', '1/4', 'England', 'Switzerland');
 insert into matches (id, match_date, match_group, team1, team2)
 values (48, '2024-07-06 21:00:00', '1/4', 'Netherlands', 'Turkey');
 
+--1/2
+insert into matches (id, match_date, match_group, team1, team2)
+values (49, '2024-07-09 21:00:00', '1/2', 'Spain', 'France');
+insert into matches (id, match_date, match_group, team1, team2)
+values (50, '2024-07-10 21:00:00', '1/2', 'Netherlands', 'England');
 
-update matches set points_multiplier=1
-update matches set points_multiplier=2 where id >= 37
+--final
+insert into matches (id, match_date, match_group, team1, team2)
+values (51, '2024-07-14 21:00:00', 'FINAL', 'Spain', 'England');
+
+
+update matches set points_multiplier=1;
+update matches set points_multiplier=2 where id >= 37;
+update matches set points_multiplier=3 where id >= 49;
+update matches set points_multiplier=5 where id = 51;
 
 update matches set team1_res=5, team2_res=1 where id=1;
 update matches set team1_res=1, team2_res=3 where id=2;
@@ -239,8 +251,19 @@ update matches set team1_res=0, team2_res=0 where id=42;
 update matches set team1_res=0, team2_res=3 where id=43;
 update matches set team1_res=1, team2_res=2 where id=44;
 
+update matches set team1_res=1, team2_res=1 where id=45;
+update matches set team1_res=0, team2_res=0 where id=46;
+update matches set team1_res=1, team2_res=1 where id=47;
+update matches set team1_res=2, team2_res=1 where id=48;
+update matches set team1_res=2, team2_res=1 where id=49;
+update matches set team1_res=1, team2_res=2 where id=50;
+update matches set team1_res=2, team2_res=1 where id=51;
+
+
 update matches_live set points_multiplier=1
 update matches_live set points_multiplier=2 where id >= 37
+update matches_live set points_multiplier=3 where id >= 49;
+update matches_live set points_multiplier=5 where id = 51;
 
 
 /*****************************
@@ -307,3 +330,11 @@ insert into user_matches (user_id, match_id, match_date, match_group, team1, tea
 select cnt.i as user_id, id, match_date, match_group, team1, team2 
 from matches left join cnt 
 where id>44;
+
+/*zaladowanie meczow 1/2 + FINAL dla kazdego usera*/
+WITH RECURSIVE 
+  cnt(i) AS (VALUES(1) UNION ALL SELECT i+1 FROM cnt WHERE i < 15) 
+insert into user_matches (user_id, match_id, match_date, match_group, team1, team2)
+select cnt.i as user_id, id, match_date, match_group, team1, team2 
+from matches left join cnt 
+where id>=49;
