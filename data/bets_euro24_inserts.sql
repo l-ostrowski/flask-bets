@@ -338,3 +338,16 @@ insert into user_matches (user_id, match_id, match_date, match_group, team1, tea
 select cnt.i as user_id, id, match_date, match_group, team1, team2 
 from matches left join cnt 
 where id>=49;
+
+
+/*****************************
+BONUSES & USER_BONUSES
+******************************/
+insert into bonuses (id, name, points) values (1, 'Champion', 20);
+insert into bonuses (id, name, points) values (2, 'Topscorer', 20);
+
+WITH RECURSIVE 
+  cnt(i) AS (VALUES(1) UNION ALL SELECT i+1 FROM cnt WHERE i < 15) 
+insert into user_bonuses (user_id, bonus_id)
+select cnt.i as user_id, id 
+from bonuses left join cnt 
