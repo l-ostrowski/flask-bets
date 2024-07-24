@@ -7,7 +7,7 @@ import hashlib
 import binascii
 
 app_info = {
-    'db_file' : '/home/python/projects/flask-bets/data/bets_euro24.db' 
+    'db_file' : './data/bets_euro24.db' 
 }
 
 app = Flask(__name__)
