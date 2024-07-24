@@ -1,0 +1,33 @@
+{% extends "bet_base.html" %}
+
+{% block title %} Matches {% endblock %}
+
+{% block content %} 
+
+<div class="container">
+  <form id="exchange_form" action="{{url_for('bonuses')}}" method="POST"> 
+      <div class="col-8"> 
+        <a href="{{ url_for('bonuses') }}" class="btn btn-secondary btn-lg" role="button">Cancel</a>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button> 
+      </div>
+
+      <div class="row mt-3">
+          <div class="col-4 col-form-label text-end"><label for="user_name">Champion</label></div>
+          <div class="col-4">
+            <select class="form-select mb-1" aria-label="Champion">
+              <option selected>Select Champion</option>
+              {% for m in teams %}
+                <option value="{{ m.team }}">{{ m.team }}</option>
+              {% endfor %}
+            </select>
+          </div>
+      </div>
+
+      <div class="row mt-3">
+          <div class="col-4 col-form-label text-end"><label for="user_pas">Top scorer</label></div>
+          <div class="col-4"><input type="text" id="user_pass" name="user_pass" class="form-control"></div>
+      </div>
+</div>
+
+{% endblock %}
+

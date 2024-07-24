@@ -44,6 +44,7 @@ create table user_matches(
     PRIMARY KEY (user_id, match_id) 
     ); 
 
+
 /*****************************
 VIEW v_user_matches
 ******************************/
@@ -174,3 +175,29 @@ from (
         left join (select * from v_user_matches_live where match_id not in (select id from matches where team1_res >=0)) l on um.user_id = l.user_id and um.match_id = l.match_id
     group by um.user_id
 )  r
+
+
+ /*****************************
+BONUSES
+******************************/
+create table bonuses(
+    id integer primary key,
+    name integer,
+    points integer,
+    result varchar(50),
+    insert_date datetime not null default(datetime())
+    );   
+
+create table user_bonuses(
+    user_id integer,
+    bonus_id integer,
+    bonus_bet varchar(50),
+    insert_date datetime not null default(datetime()),
+    PRIMARY KEY (user_id, bonus_id) 
+    );  
+
+create view v_user_bonuses as
+select ub.user_id, ub.bonus_id, b.name, ub.bonus_bet, b.result
+    ,case when ub.bonus_bet = b.result then b.points else 0 end as bonus_points
+from user_bonuses ub 
+    inner join bonuses b where ub.bonus_id = b.id
