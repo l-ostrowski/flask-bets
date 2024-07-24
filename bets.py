@@ -107,8 +107,9 @@ sql_select_results = 'select * from v_user_matches where match_date < strftime("
 sql_select_live = 'select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
 sql_select_ranking_live ='select * from v_rank_live'
 sql_select_teams = 'select distinct team from (select team1 as team from matches union select team2 as team from matches)'
-sql_select_bonus_champion = 'select bonus_id, name, bonus_bet from v_user_bonuses where name="Champion" and user_id=?'
-sql_select_bonus_topscorer = 'select bonus_id, name, bonus_bet from v_user_bonuses where name="Topscorer" and user_id=?'
+sql_select_bonus_champion = 'select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name="Champion" and user_id=?'
+sql_select_bonus_topscorer = 'select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name="Topscorer" and user_id=?'
+sql_select_user_bonuses ='select * from v_user_bonuses'
 
 ###########################################################################
 ###############             EURO2024 BETS          ########################
@@ -178,7 +179,7 @@ def edit():
 
     cur = db.execute(sql_select,  [login.id])
     matches=cur.fetchall()
-    return render_template('bet_edit.html', matches=matches, active_matches='active', login=login )
+    return render_template('bet_edit_matches.html', matches=matches, active_matches='active', login=login )
 
 @app.route('/ranking')
 def ranking():
@@ -302,14 +303,32 @@ def bonuses():
     if not login.is_valid:
         return redirect(url_for('login')) 
     
-    db = get_db()
-    cur = db.execute(sql_select_bonus_champion, [login.id])
-    champion = cur.fetchone()
-    
-    cur = db.execute(sql_select_bonus_topscorer, [login.id])
-    topscorer = cur.fetchone()
+    if request.method == 'GET':
+        db = get_db()
+        cur = db.execute(sql_select_bonus_champion, [login.id])
+        champion = cur.fetchone()
+        
+        cur = db.execute(sql_select_bonus_topscorer, [login.id])
+        topscorer = cur.fetchone()
 
-    return render_template('bet_bonuses.html', champion=champion, topscorer=topscorer, active_bonuses='active', login=login)
+        cur = db.execute(sql_select_user_bonuses)
+        users_bonuses = cur.fetchall()
+        
+
+        return render_template('bet_bonuses.html', champion=champion, topscorer=topscorer, users_bonuses=users_bonuses, active_bonuses='active', login=login)
+    else:
+        db = get_db()
+
+        sql_command = 'update user_bonuses set bonus_bet=? where bonus_id=1 and user_id=?'
+        db.execute(sql_command, [request.form['champion'], login.id])
+        db.commit()
+
+        sql_command = 'update user_bonuses set bonus_bet=? where bonus_id=2 and user_id=?'
+        db.execute(sql_command, [request.form['topscorer'], login.id])
+        db.commit()
+
+        flash('Your bets have been updated', 'success')
+        return redirect(url_for('bonuses'))
 
 @app.route('/edit_bonus', methods=['POST', 'GET'])
 def edit_bonus():
@@ -320,9 +339,20 @@ def edit_bonus():
         return redirect(url_for('login')) 
     
     db = get_db()
-    
-    db = get_db()
+
     cur = db.execute(sql_select_teams)
     teams=cur.fetchall()
 
-    return render_template('bet_edit_bonuses.html', teams=teams, active_bonuses='active', login=login)
+    cur = db.execute(sql_select_bonus_champion, [login.id])
+    champion = cur.fetchone()
+        
+    cur = db.execute(sql_select_bonus_topscorer, [login.id])
+    topscorer = cur.fetchone()
+
+    return render_template('bet_edit_bonuses.html', teams=teams, active_bonuses='active', login=login, champion=champion, topscorer=topscorer)
+
+#TODO:
+#3/ termin do kiedy mozna obstawic bonus
+#4/ audyt (tabele archive, lub rekordy wersjonowane)
+#5/ sparametryzowac strefe czasowa
+#6/ automatycznie zakladanoe kont/odzyskiwanie hasel

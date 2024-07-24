@@ -11,20 +11,40 @@
 
       <div class="row mt-3">
           <div class="col-4 col-form-label text-end"><label for="user_name">Champion</label></div>
-          <div class="col-4"><input type="text" id="user_name" name="user_name" class="form-control" value="{{ champion.bonus_bet }}" disabled></div>
+          <div class="col-6"><input type="text" id="user_name" name="user_name" class="form-control" value="{{ champion.bonus_bet }}" disabled></div>
       </div>
 
       <div class="row mt-3">
           <div class="col-4 col-form-label text-end"><label for="user_pas">Top scorer</label></div>
-          <div class="col-4"><input type="text" id="user_pass" name="user_pass" class="form-control" value="{{ topscorer.bonus_bet }}" disabled></div>
+          <div class="col-6"><input type="text" id="user_pass" name="user_pass" class="form-control" value="{{ topscorer.bonus_bet }}" disabled></div>
       </div>
 </div>
 
-{% endblock %}
+<br><br>
 
-<!-- <select class="form-select mb-1" aria-label="Champion" disabled>
-  <option selected>Select Champion</option>
-  {% for m in teams %}
-    <option value="{{ m.team }}">{{ m.team }}</option>
-  {% endfor %}
-</select> -->
+<div class="container">
+    <table class="table" id="myTab">
+ 
+        <thead>
+          <tr>
+            <th scope="col">Player</th>
+            <th scope="col">Bonus</th>
+            <th scope="col">Bet</th>
+            <th scope="col">Points</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+            {% for m in users_bonuses %}
+          <tr>
+            <td>{{ m.user_name }}</td>
+            <td>{{ m.bonus_name }}</td>
+            <td>{{ m.bonus_bet }}</td>
+            <td>{{ m.bonus_points }}</td>
+          </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}

@@ -351,3 +351,8 @@ WITH RECURSIVE
 insert into user_bonuses (user_id, bonus_id)
 select cnt.i as user_id, id 
 from bonuses left join cnt 
+
+update bonuses set result = 'Spain' where id = 1
+update bonuses set result = 'Dani Olmo, Harry Kane, Cody Gakpo, Georges Mikautadze, Jamal Musiala, Ivan Schranz' where id = 2
+
+
