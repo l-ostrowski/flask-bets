@@ -12,6 +12,8 @@
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Points</th>
+            <th scope="col">Bonus Points</th>
+            <th scope="col">Total Points</th>
           </tr>
         </thead>
        
@@ -21,6 +23,8 @@
             <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.rank }}</td>
             <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.nick }}</td>
             <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.points }}</td>
+            <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.bonus_points }}</td>
+            <td class={{"table-info" if r.nick==login.user}} scope="row">{{ r.points_total }}</td>
           </tr>
             {% endfor %}
         </tbody>

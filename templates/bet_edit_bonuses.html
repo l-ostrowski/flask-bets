@@ -5,17 +5,17 @@
 {% block content %} 
 
 <div class="container">
-  <form id="exchange_form" action="{{url_for('bonuses')}}" method="POST"> 
+  <form id="bonuses_form" action="{{url_for('bonuses')}}" method="POST"> 
       <div class="col-8"> 
         <a href="{{ url_for('bonuses') }}" class="btn btn-secondary btn-lg" role="button">Cancel</a>
         <button type="submit" class="btn btn-primary btn-lg">Submit</button> 
       </div>
 
       <div class="row mt-3">
-          <div class="col-4 col-form-label text-end"><label for="user_name">Champion</label></div>
+          <div class="col-4 col-form-label text-end"><label for="champion">Champion</label></div>
           <div class="col-4">
-            <select class="form-select mb-1" aria-label="Champion">
-              <option selected>Select Champion</option>
+            <select class="form-select mb-1" aria-label="champion" id="champion" name="champion">
+              <option selected>{{ champion.bonus_bet }}</option>
               {% for m in teams %}
                 <option value="{{ m.team }}">{{ m.team }}</option>
               {% endfor %}
@@ -24,8 +24,8 @@
       </div>
 
       <div class="row mt-3">
-          <div class="col-4 col-form-label text-end"><label for="user_pas">Top scorer</label></div>
-          <div class="col-4"><input type="text" id="user_pass" name="user_pass" class="form-control"></div>
+          <div class="col-4 col-form-label text-end"><label for="topscorer">Top scorer</label></div>
+          <div class="col-4"><input type="text" id="topscorer" name="topscorer" class="form-control" value="{{ topscorer.bonus_bet }}"></div>
       </div>
 </div>
 

@@ -95,16 +95,7 @@ select
         left join matches m on um.match_id=m.id
         left join users u on um.user_id=u.id
 
-/*****************************
-VIEW v_rank
-******************************/
-create view v_rank as
-select RANK () OVER (ORDER BY points DESC) as rank, r.nick, r.points 
-from (
-    select  u.name as nick, sum(points_draw + points_win + points_lucky_loser + points_bonus) as points
-    from v_user_matches um inner join users u on um.user_id = u.id
-    group by user_id
-)  r
+
 
 /*****************************
 VIEW v_user_matches_live
@@ -164,8 +155,8 @@ select
 VIEW v_rank_live
 ******************************/
 create view v_rank_live as
-select RANK () OVER (ORDER BY r.points + r.points_live DESC) as rank, r.nick, 
-    r.points, r.points_live, r.points + r.points_live as points_total 
+select RANK () OVER (ORDER BY r.points + coalesce(r.points_live,0) DESC) as rank
+    , r.nick, r.points, r.points_live, r.points + coalesce(r.points_live,0) as points_total 
 from (
     select  u.name as nick, 
         sum(um.points_draw + um.points_win + um.points_lucky_loser + um.points_bonus) as points,
@@ -196,8 +187,32 @@ create table user_bonuses(
     PRIMARY KEY (user_id, bonus_id) 
     );  
 
+--drop view v_user_bonuses;
 create view v_user_bonuses as
-select ub.user_id, ub.bonus_id, b.name, ub.bonus_bet, b.result
-    ,case when ub.bonus_bet = b.result then b.points else 0 end as bonus_points
+select ub.user_id, u.name as user_name, ub.bonus_id, b.name as bonus_name, ub.bonus_bet, b.result
+    ,case when b.result like '%'||ub.bonus_bet||'%' then b.points else 0 end as bonus_points
 from user_bonuses ub 
-    inner join bonuses b where ub.bonus_id = b.id
+    inner join bonuses b on ub.bonus_id = b.id
+    inner join users u on ub.user_id = u.id
+order by ub.user_id, b.name; 
+
+create view v_user_bonuses_sum as
+select user_id, sum(bonus_points) as bonus_points
+from v_user_bonuses
+group by user_id;
+
+/*****************************
+VIEW v_rank
+******************************/
+create view v_rank as
+select RANK () OVER (ORDER BY points + bonus_points DESC) as rank
+    ,r.nick, r.points, r.bonus_points, r.points + r.bonus_points as points_total  
+from (
+    select  u.name as nick
+        ,sum(points_draw + points_win + points_lucky_loser + points_bonus) as points
+        ,ub.bonus_points
+    from v_user_matches um 
+        inner join users u on um.user_id = u.id
+        inner join v_user_bonuses_sum ub on um.user_id = ub.user_id 
+    group by um.user_id
+)  r;
