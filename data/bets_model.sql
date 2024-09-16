@@ -55,6 +55,7 @@ select
         u.name,
         um.match_id, 
         strftime('%d-%m-%Y %H:%M', um.match_date) as match_date, 
+        um.match_date as match_date_oryg, 
         um.match_group, 
         um.team1, 
         um.team2, 

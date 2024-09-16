@@ -7,8 +7,12 @@ import hashlib
 import binascii
 
 app_info = {
-    'db_file' : './data/bets_euro24.db' 
+    'db_file' : './data/bets_euro24.db',
+    'bonus_deadline' : '14-06-2024 20:55',
+    'time_zone_offset' : +2 #differences in hours between server datetime and match datetime (tells how much hours do we need to add to the server time)
 }
+
+time_zone_offset=app_info['time_zone_offset']
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='a_secret_string'
@@ -25,10 +29,6 @@ def get_db():
 def close_db(error):
     if hasattr(g, 'sqlite.db'):
         g.sqlite_db.close()
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
-
 
 class UserPass:
     def __init__(self, user='', password=''):
@@ -103,7 +103,7 @@ class UserPass:
 sql_select = 'select * from v_user_matches where user_id=?'
 sql_select_ranking = 'select * from v_rank'
 sql_match_date = 'select min(match_date) as match_dt_check from v_user_matches where disabled=""'
-sql_select_results = 'select * from v_user_matches where match_date < strftime("%d-%m-%Y %H:%M", datetime("now","+2 hour")) order by match_group, match_id, name'
+sql_select_results = f'select * from v_user_matches where match_date_oryg < datetime("now","{time_zone_offset} hour") order by match_group, match_id, name'
 sql_select_live = 'select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
 sql_select_ranking_live ='select * from v_rank_live'
 sql_select_teams = 'select distinct team from (select team1 as team from matches union select team2 as team from matches)'
@@ -133,7 +133,8 @@ def matches():
         return render_template('bet_matches.html', matches=matches, active_matches='active', login=login )
     else:
 
-        #print(datetime.now() + timedelta(hours=2))
+        #match_dt_check - przechowuje date startu najwczesniejszego meczu ktory został poddany edycji...
+        #                  ...na wypadek gdyby uzytkownik otworzyl formularz do edyci przed deadline ale zapisal do deadline    
         match_dt_check = session.get('match_dt_check')
         if match_dt_check: 
             print(datetime.strptime(match_dt_check,'%d-%m-%Y %H:%M'))
@@ -142,7 +143,7 @@ def matches():
         
         if not match_dt_check:
             flash('Your bets have not beed updated', 'warning')
-        elif datetime.strptime(match_dt_check,'%d-%m-%Y %H:%M') < datetime.now() + timedelta(hours=2):
+        elif datetime.strptime(match_dt_check,'%d-%m-%Y %H:%M') < datetime.now() + timedelta(hours=app_info['time_zone_offset']):
             flash('Too late! The match has already started', 'error')
         else:
             db = get_db()
@@ -313,9 +314,16 @@ def bonuses():
 
         cur = db.execute(sql_select_user_bonuses)
         users_bonuses = cur.fetchall()
+
+        #bonus_bet_enabled = 0
+        if datetime.strptime(app_info['bonus_deadline'],'%d-%m-%Y %H:%M') > datetime.now() + timedelta(hours=app_info['time_zone_offset']):
+            bonus_bet_enabled = 1
+        else: 
+            bonus_bet_enabled = 0
         
 
-        return render_template('bet_bonuses.html', champion=champion, topscorer=topscorer, users_bonuses=users_bonuses, active_bonuses='active', login=login)
+        return render_template('bet_bonuses.html', champion=champion, topscorer=topscorer, users_bonuses=users_bonuses, active_bonuses='active', login=login, 
+                                bonus_deadline=app_info['bonus_deadline'],bonus_bet_enabled=bonus_bet_enabled)
     else:
         db = get_db()
 
@@ -351,8 +359,11 @@ def edit_bonus():
 
     return render_template('bet_edit_bonuses.html', teams=teams, active_bonuses='active', login=login, champion=champion, topscorer=topscorer)
 
+if __name__ == '__main__':
+    app.run(host = '0.0.0.0', port = 3000, debug = True)
+
+
+
 #TODO:
-#3/ termin do kiedy mozna obstawic bonus
 #4/ audyt (tabele archive, lub rekordy wersjonowane)
-#5/ sparametryzowac strefe czasowa
 #6/ automatycznie zakladanoe kont/odzyskiwanie hasel
