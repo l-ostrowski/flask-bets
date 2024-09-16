@@ -1,13 +1,22 @@
-<b>/**** Server preparation *****/</b>  
+## Setup
+
+
+<b>1. Server preparation</b>  
+
+```
 --install python (on Ubuntu is installed by deafult)  
 --install git (on Ubuntu is installed by deafult)  
-sudo apt-get update  
-sudo apt-get upgrade  
-sudo apt install python3.8-venv  
+$ sudo apt-get update  
+$ sudo apt-get upgrade  
+$ sudo apt install python3.8-venv  
+```
 
-<b>/**** clone repository from Github *****/</b>  
-git clone https://github.com/l-ostrowski/flask-bets ~/projects/flask-bets  
-cd ~/projects/flask-bets/  
+<b>2. clone repository from Github</b>  
+
+```
+$ git clone https://github.com/l-ostrowski/flask-bets ~/projects/flask-bets  
+$ cd ~/projects/flask-bets/  
+```
 
 <b>/**** venv + flask + gunicorn *****/</b>    
 python3 -m venv ~/projects/flask-bets/env    
