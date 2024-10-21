@@ -54,7 +54,8 @@ $ sudo cp ~/projects/flask-bets/nginxfiles/bets.conf /etc/nginx/sites-available/
 1/ update /etc/nginx/sites-available/bets.conf file with your IP (eg in VI (use sudo) or in winscp). Next run following commands  
 
 ```
-$ sudo ln -s /etc/nginx/sites-available/bets.conf /etc/nginx/sites-enabled/bets.conf  
+$ sudo ln -s /etc/nginx/sites-available/bets.conf /etc/nginx/sites-enabled/bets.conf
+$ sudo rm /etc/nginx/sites-enabled/default  
 $ sudo systemctl restart nginx  
 ```
 
