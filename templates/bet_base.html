@@ -5,11 +5,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- block css_js -->
+    {% block css_js %} 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% endblock %}
     <!-- block title -->
-    <title>{% block title %} {% endblock %}</title>
+    <title>{% block title %} Euro2024 {% endblock %}</title>
 
     <style>
       /* Chrome, Safari, Edge, Opera */
@@ -76,6 +80,6 @@
     {{ show_messages() }}
 
     <!-- block content -->
-    {% block content%} Trip!!!!! {% endblock %}
+    {% block content%} Euro2024 {% endblock %}
   </body>
 </html>

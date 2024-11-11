@@ -1,0 +1,5257 @@
+{
+    "success": true,
+    "data": {
+      "competition": {
+        "id": 387,
+        "name": "UEFA EURO",
+        "is_league": false,
+        "is_cup": true,
+        "tier": 0,
+        "has_groups": true,
+        "active": true,
+        "national_teams_only": false
+      },
+      "teams": [
+        {
+          "team": {
+            "id": 1449,
+            "name": "Germany",
+            "stadium": "Olympiastadion Berlin",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/072fb8fafbf0c6a00cea793f570e7eac.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 2174,
+                "name": "Marc-Andre ter Stegen"
+              },
+              "shirt_number": "22",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 2337,
+                "name": "Jonathan Tah"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2342,
+                "name": "Kai Havertz"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2359,
+                "name": "Thomas Muller"
+              },
+              "shirt_number": "13",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2360,
+                "name": "Manuel Neuer"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 2367,
+                "name": "Joshua Kimmich"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 3221,
+                "name": "Pascal Gross"
+              },
+              "shirt_number": "5",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4332,
+                "name": "Antonio Rudiger"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7390,
+                "name": "Robin Koch"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7397,
+                "name": "Nico Schlotterbeck"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8064,
+                "name": "David Raum"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8398,
+                "name": "Waldemar Anton"
+              },
+              "shirt_number": "16",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8643,
+                "name": "Maximilian Mittelstadt"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8813,
+                "name": "Oliver Baumann"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 8834,
+                "name": "Maximilian Beier"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 11390,
+                "name": "Ilkay Gundogan"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11391,
+                "name": "Leroy Sane"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 12016,
+                "name": "Benjamin Henrichs"
+              },
+              "shirt_number": "20",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14963,
+                "name": "Toni Kroos"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 18706,
+                "name": "Robert Andrich"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19841,
+                "name": "Niclas Fullkrug"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 31031,
+                "name": "Chris Fuhrich"
+              },
+              "shirt_number": "11",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 62664,
+                "name": "Deniz Undav"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 91039,
+                "name": "Florian Wirtz"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 91174,
+                "name": "Jamal Musiala"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 129912,
+                "name": "Aleksandar Pavlović"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1741,
+            "name": "Scotland",
+            "stadium": "Hampden Park",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/b672c7198810f89534347292756cdf9b.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 32,
+                "name": "Scott McKenna"
+              },
+              "shirt_number": "26",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1344,
+                "name": "Kieran Tierney"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1461,
+                "name": "John McGinn"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3948,
+                "name": "James Forrest"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3952,
+                "name": "Callum McGregor"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3959,
+                "name": "Ryan Christie"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 3975,
+                "name": "Greg Taylor"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 4351,
+                "name": "Billy Gilmour"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 8673,
+                "name": "Ryan Porteous"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10446,
+                "name": "Liam Cooper"
+              },
+              "shirt_number": "16",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10825,
+                "name": "Andrew Robertson"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10887,
+                "name": "Robby McCrorie"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11422,
+                "name": "Scott McTominay"
+              },
+              "shirt_number": "4",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11685,
+                "name": "Jack Hendry"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 12809,
+                "name": "Grant Hanley"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 12812,
+                "name": "Kenny McLean"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 14592,
+                "name": "Liam Kelly"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 14759,
+                "name": "Ryan Jack"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17089,
+                "name": "Stuart Armstrong"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17090,
+                "name": "Angus Gunn"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17098,
+                "name": "Che Adams"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17543,
+                "name": "Zander Clark"
+              },
+              "shirt_number": "21",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17561,
+                "name": "Tony Ralston"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 40124,
+                "name": "Lawrence Shankland"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 55407,
+                "name": "Lewis Morgan"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 112057,
+                "name": "Tommy Conway"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1475,
+            "name": "Hungary",
+            "stadium": "Groupama Aréna",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/7ba2b8c5cfefe9aca004d963a476546a.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1180,
+                "name": "Attila Szalai"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2212,
+                "name": "Callum Styles"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2503,
+                "name": "Kevin Csoboth"
+              },
+              "shirt_number": "23",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 3303,
+                "name": "Adam Nagy"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7396,
+                "name": "Roland Sallai"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 13307,
+                "name": "Adam Lang"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 13458,
+                "name": "Laszlo Kleinheisler"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13933,
+                "name": "Botond Balogh"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14824,
+                "name": "Peter Gulacsi"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 14826,
+                "name": "Willi Orban"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15710,
+                "name": "Dominik Szoboszlai"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 31900,
+                "name": "Daniel Gazdag"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 37683,
+                "name": "Andras Schafer"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 46889,
+                "name": "Denes Dibusz"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 46893,
+                "name": "Endre Botka"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 53819,
+                "name": "Marton Dardai"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 54725,
+                "name": "Zsolt Nagy"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 56880,
+                "name": "Martin Adam"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 62848,
+                "name": "Peter Szappanos"
+              },
+              "shirt_number": "22",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 63972,
+                "name": "Mihaly Kata"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 83190,
+                "name": "Loic Nego"
+              },
+              "shirt_number": "7",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 83193,
+                "name": "Attila Fiola"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 85336,
+                "name": "Krisztofer Horvath"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 85349,
+                "name": "Bendeguz Bolla"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 92030,
+                "name": "Barnabas Varga"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 120379,
+                "name": "Milos Kerkez"
+              },
+              "shirt_number": "11",
+              "position": "DF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 208,
+            "name": "Switzerland",
+            "stadium": "St. Jakob-Park",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/f1f54aa2f85ceac3aeaf194a4e90d5d5.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1321,
+                "name": "Granit Xhaka"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 1487,
+                "name": "Remo Freuler"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 1863,
+                "name": "Ruben Vargas"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2284,
+                "name": "Silvan Widmer"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2917,
+                "name": "Manuel Akanji"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2942,
+                "name": "Yann Sommer"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 2945,
+                "name": "Nico Elvedi"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2951,
+                "name": "Denis Zakaria"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2959,
+                "name": "Breel Embolo"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 8829,
+                "name": "Steven Zuber"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10831,
+                "name": "Xherdan Shaqiri"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 12481,
+                "name": "Fabian Schar"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14504,
+                "name": "Ricardo Rodriguez"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14831,
+                "name": "Yvon Mvogo"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 15724,
+                "name": "Noah Okafor"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17448,
+                "name": "Leonidas Stergiou"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 19188,
+                "name": "Gregor Kobel"
+              },
+              "shirt_number": "21",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 20114,
+                "name": "Renato Steffen"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 20377,
+                "name": "Michel Aebischer"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20390,
+                "name": "Vincent Sierro"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20391,
+                "name": "Cedric Zesiger"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 45692,
+                "name": "Zeki Amdouni"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 59411,
+                "name": "Dan Ndoye"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 84597,
+                "name": "Kwadwo Duah"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 91601,
+                "name": "Ardon Jasari"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 96023,
+                "name": "Fabian Rieder"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1438,
+            "name": "Spain",
+            "stadium": "Estadio Santiago Bernabéu",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/0eff90ce8a7195f8ed1393ea88b97f2d.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1531,
+                "name": "Dani Vivian"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1536,
+                "name": "Unai Simon"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 1623,
+                "name": "Alvaro Morata"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2466,
+                "name": "Alex Grimaldo"
+              },
+              "shirt_number": "12",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 3148,
+                "name": "David Raya"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 7724,
+                "name": "Marc Cucurella"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10559,
+                "name": "Ayoze Perez"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 11401,
+                "name": "Aymeric Laporte"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11404,
+                "name": "Rodri"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 14849,
+                "name": "Dani Olmo"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14959,
+                "name": "Nacho"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14960,
+                "name": "Dani Carvajal"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15016,
+                "name": "Mikel Oyarzabal"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15024,
+                "name": "Mikel Merino"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15027,
+                "name": "Alex Remiro"
+              },
+              "shirt_number": "13",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 15031,
+                "name": "Robin Le Normand"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15039,
+                "name": "Martin Zubimendi"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 15339,
+                "name": "Pau Lopez"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16217,
+                "name": "Jesus Navas"
+              },
+              "shirt_number": "22",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17420,
+                "name": "Fabian Ruiz"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 18889,
+                "name": "Ferran Torres"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 60237,
+                "name": "Joselu"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 86327,
+                "name": "Pedro Gonzalez"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 97657,
+                "name": "Nicholas Williams"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 98231,
+                "name": "Alex Baena"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 132319,
+                "name": "Lamine Yamal"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 211,
+            "name": "Croatia",
+            "stadium": "Stadion Maksimir",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/109cd9e5a4a842f9492d5f6a79d9b129.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1023,
+                "name": "Marko Pjaca"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 1502,
+                "name": "Mario Pasalic"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2383,
+                "name": "Ivan Perisic"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2566,
+                "name": "Domagoj Vida"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 4346,
+                "name": "Mateo Kovacic"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4961,
+                "name": "Nikola Vlasic"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5306,
+                "name": "Dominik Livakovic"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 5320,
+                "name": "Lovro Majer"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5321,
+                "name": "Bruno Petkovic"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 5323,
+                "name": "Josko Gvardiol"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5327,
+                "name": "Luka Ivanusec"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 5330,
+                "name": "Josip Sutalo"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8251,
+                "name": "Josip Juranovic"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8816,
+                "name": "Andrej Kramaric"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9161,
+                "name": "Marcelo Brozovic"
+              },
+              "shirt_number": "11",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11341,
+                "name": "Ante Budimir"
+              },
+              "shirt_number": "16",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 13448,
+                "name": "Ivica Ivusic"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 14958,
+                "name": "Luka Modric"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19178,
+                "name": "Borna Sosa"
+              },
+              "shirt_number": "19",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 20129,
+                "name": "Marin Pongracic"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 29248,
+                "name": "Josip Stanisic"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 44535,
+                "name": "Luka Sucic"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 74628,
+                "name": "Nediljko Labrovic"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 76121,
+                "name": "Martin Erlic"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 97469,
+                "name": "Martin Baturina"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 115125,
+                "name": "Marco Pasalic"
+              },
+              "shirt_number": "24",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1740,
+            "name": "Italy",
+            "stadium": "Stadio Olimpico",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/489bcf3b76029b9792daabb4b88b8e1c.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 184,
+                "name": "Gianluigi Donnarumma"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 1513,
+                "name": "Raoul Bellanova"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 4338,
+                "name": "Jorginho"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5798,
+                "name": "Mateo Retegui"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6927,
+                "name": "Federico Chiesa"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7675,
+                "name": "Andrea Cambiaso"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8517,
+                "name": "Mattia Zaccagni"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 8543,
+                "name": "Federico Dimarco"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 9175,
+                "name": "Nicolo Barella"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 9181,
+                "name": "Alessandro Bastoni"
+              },
+              "shirt_number": "23",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 13931,
+                "name": "Matteo Darmian"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15326,
+                "name": "Lorenzo Pellegrini"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15335,
+                "name": "Bryan Cristante"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15340,
+                "name": "Gianluca Mancini"
+              },
+              "shirt_number": "17",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15346,
+                "name": "Riccardo Calafiori"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16052,
+                "name": "Giacomo Raspadori"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16349,
+                "name": "Stephan El Shaarawy"
+              },
+              "shirt_number": "22",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17421,
+                "name": "Alex Meret"
+              },
+              "shirt_number": "26",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17426,
+                "name": "Giovanni Di Lorenzo"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 26451,
+                "name": "Gianluca Scamacca"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 28977,
+                "name": "Michael Folorunsho"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 41192,
+                "name": "Davide Frattesi"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 56529,
+                "name": "Nicolo Fagioli"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 68051,
+                "name": "Guglielmo Vicario"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 79839,
+                "name": "Alessandro Buongiorno"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 95358,
+                "name": "Federico Gatti"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1742,
+            "name": "Albania",
+            "stadium": "Stadiumi Loro Boriçi",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/6dd64e000ef81a36b3807659b7b934f0.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 141,
+                "name": "Qazim Laci"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 628,
+                "name": "Jasir Asani"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 902,
+                "name": "Ivan Balliu"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1497,
+                "name": "Berat Djimsiti"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2194,
+                "name": "Rey Manaj"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7383,
+                "name": "Amir Abrashi"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 8252,
+                "name": "Ardian Ismajli"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8523,
+                "name": "Marash Kumbulla"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10299,
+                "name": "Thomas Strakosha"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 13617,
+                "name": "Klaus Gjasula"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13836,
+                "name": "Enea Mihaj"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17146,
+                "name": "Etrit Berisha"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17413,
+                "name": "Elseid Hysaj"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 20231,
+                "name": "Taulant Seferi"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 24065,
+                "name": "Ylber Ramadani"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 24071,
+                "name": "Armando Broja"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 24073,
+                "name": "Naser Aliji"
+              },
+              "shirt_number": "25",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 41197,
+                "name": "Nedim Bajrami"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 45072,
+                "name": "Arber Hoxha"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 57643,
+                "name": "Ernest Muci"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 59017,
+                "name": "Mirlind Daku"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 79842,
+                "name": "Elhan Kastrati"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 94780,
+                "name": "Mario Mitaj"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 95085,
+                "name": "Arlind Ajeti"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 97041,
+                "name": "Kristjan Asllani"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 128363,
+                "name": "Medon Berisha"
+              },
+              "shirt_number": "16",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1648,
+            "name": "Slovenia",
+            "stadium": "Stadion Stožice",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/ebae6d9133f7759d7c9aa1a3c8398dd5.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1152,
+                "name": "Vid Belec"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 1493,
+                "name": "Josip Ilicic"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 1613,
+                "name": "Jan Oblak"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 4959,
+                "name": "Jaka Bijol"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5305,
+                "name": "Petar Stojanovic"
+              },
+              "shirt_number": "20",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5465,
+                "name": "Benjamin Verbic"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7915,
+                "name": "Erik Janza"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8905,
+                "name": "Jon Gorenc-Stankovic"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11029,
+                "name": "Sandi Lovric"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 12891,
+                "name": "Adam Gnezda Cerin"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13937,
+                "name": "Jasmin Kurtic"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17377,
+                "name": "Andraz Sporar"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 20009,
+                "name": "Jan Mlakar"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 36748,
+                "name": "Zan Celar"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 41196,
+                "name": "Jure Balkovec"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 44542,
+                "name": "Benjamin Sesko"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 46896,
+                "name": "Miha Blazic"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 65144,
+                "name": "David Brekalo"
+              },
+              "shirt_number": "23",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 65152,
+                "name": "Igor Vekic"
+              },
+              "shirt_number": "16",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 65166,
+                "name": "Vanja Drkusic"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 65568,
+                "name": "Zan Karnicnik"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 65578,
+                "name": "Tomi Horvat"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 66348,
+                "name": "Timi Elsnik"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 93328,
+                "name": "Nino Zugelj"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 96720,
+                "name": "Adrian Zeljkovic"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 98351,
+                "name": "Zan Vipotnik"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1442,
+            "name": "Denmark",
+            "stadium": "Telia Parken",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/e05082f0c87a9ceb8e50753f9cba3073.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 205,
+                "name": "Simon Kjaer"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 327,
+                "name": "Morten Hjulmand"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2825,
+                "name": "Andreas Olsen"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2920,
+                "name": "Thomas Delaney"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3145,
+                "name": "Christian Norgaard"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3150,
+                "name": "Mathias Jensen"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3365,
+                "name": "Mads Hermansen"
+              },
+              "shirt_number": "16",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 4330,
+                "name": "Andreas Christensen"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5530,
+                "name": "Frederik Ronnow"
+              },
+              "shirt_number": "22",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 6269,
+                "name": "Jonas Wind"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6414,
+                "name": "Anders Dreyer"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 6461,
+                "name": "Mikkel Damsgaard"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7342,
+                "name": "Mathias Jorgensen"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7618,
+                "name": "Joakim Maehle"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8839,
+                "name": "Jacob Bruun Larsen"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 9189,
+                "name": "Christian Eriksen"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10539,
+                "name": "Kasper Schmeichel"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 11186,
+                "name": "Joachim Andersen"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 12623,
+                "name": "Kasper Dolberg"
+              },
+              "shirt_number": "12",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14821,
+                "name": "Yussuf Poulsen"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 15717,
+                "name": "Rasmus Kristensen"
+              },
+              "shirt_number": "25",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17064,
+                "name": "Alexander Bah"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17086,
+                "name": "Pierre Hojbjerg"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17091,
+                "name": "Jannik Vestergaard"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 88692,
+                "name": "Victor Kristiansen"
+              },
+              "shirt_number": "17",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 96289,
+                "name": "Rasmus Winther Hojlund"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1447,
+            "name": "Serbia",
+            "stadium": "Stadion Rajko Mitić",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/e2c1ad7c5df37d12c4b6b30873d53e16.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 679,
+                "name": "Dusan Tadic"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2468,
+                "name": "Andrija Zivkovic"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 5525,
+                "name": "Mijat Gacinovic"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5534,
+                "name": "Filip Kostic"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6295,
+                "name": "Uros Spajic"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 6928,
+                "name": "Nikola Milenkovic"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 6931,
+                "name": "Dusan Vlahovic"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7441,
+                "name": "Aleksandar Mitrovic"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7721,
+                "name": "Nemanja Maksimovic"
+              },
+              "shirt_number": "5",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10120,
+                "name": "Srdjan Mijailovic"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10298,
+                "name": "Sergej Milinkovic-Savic"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10417,
+                "name": "Filip Mladenovic"
+              },
+              "shirt_number": "25",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14977,
+                "name": "Luka Jovic"
+              },
+              "shirt_number": "8",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 15060,
+                "name": "Predrag Rajkovic"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 16230,
+                "name": "Nemanja Gudelj"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17650,
+                "name": "Vanja Milinkovic-Savic"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 18387,
+                "name": "Sasa Lukic"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19826,
+                "name": "Milos Veljkovic"
+              },
+              "shirt_number": "13",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 37512,
+                "name": "Djordje Petrovic"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 37523,
+                "name": "Veljko Birmancevic"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 47433,
+                "name": "Srdan Babic"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 53793,
+                "name": "Lazar Samardzic"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 67585,
+                "name": "Strahinja Pavlovic"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 94784,
+                "name": "Ivan Ilic"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 103436,
+                "name": "Nemanja Stojic"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 135516,
+                "name": "Petar Ratkov"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1456,
+            "name": "England",
+            "stadium": "Wembley Stadium",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/2950f0559726fc1d62bb95e12c781ad3.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 531,
+                "name": "Aaron Ramsdale"
+              },
+              "shirt_number": "13",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 1334,
+                "name": "Bukayo Saka"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 1471,
+                "name": "Ezri Konsa"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1630,
+                "name": "Kieran Trippier"
+              },
+              "shirt_number": "12",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2615,
+                "name": "Jude Bellingham"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3136,
+                "name": "Ollie Watkins"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 3217,
+                "name": "Lewis Dunk"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5909,
+                "name": "Jordan Pickford"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 5927,
+                "name": "Anthony Gordon"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 10819,
+                "name": "Joe Gomez"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10823,
+                "name": "Trent Alexander-Arnold"
+              },
+              "shirt_number": "8",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11392,
+                "name": "John Stones"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11394,
+                "name": "Phil Foden"
+              },
+              "shirt_number": "11",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11399,
+                "name": "Kyle Walker"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11414,
+                "name": "Luke Shaw"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14107,
+                "name": "Ivan Toney"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14580,
+                "name": "Eberechi Eze"
+              },
+              "shirt_number": "21",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16415,
+                "name": "Dean Henderson"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17915,
+                "name": "Marc Guehi"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17916,
+                "name": "Conor Gallagher"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 18431,
+                "name": "Harry Kane"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 19897,
+                "name": "Declan Rice"
+              },
+              "shirt_number": "4",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19920,
+                "name": "Jarrod Bowen"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 91567,
+                "name": "Cole Palmer"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 122857,
+                "name": "Adam Wharton"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 129630,
+                "name": "Kobbie Mainoo"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1649,
+            "name": "Netherlands",
+            "stadium": "Johan Cruijff Arena",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/a0568a97ca1a98b7e5d43aa051333bd8.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 521,
+                "name": "Nathan Ake"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 680,
+                "name": "Daley Blind"
+              },
+              "shirt_number": "17",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 682,
+                "name": "Ryan Gravenberch"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2013,
+                "name": "Teun Koopmeiners"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2183,
+                "name": "Frenkie De Jong"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2822,
+                "name": "Jerdy Schouten"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3976,
+                "name": "Jeremie Frimpong"
+              },
+              "shirt_number": "12",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6906,
+                "name": "Justin Bijlow"
+              },
+              "shirt_number": "13",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 6909,
+                "name": "Lutsharel Geertruida"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7392,
+                "name": "Mark Flekken"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 9168,
+                "name": "Stefan De Vrij"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 9566,
+                "name": "Matthijs De Ligt"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10822,
+                "name": "Georginio Wijnaldum"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10827,
+                "name": "Virgil van Dijk"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11169,
+                "name": "Memphis Depay"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14474,
+                "name": "Donyell Malen"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14475,
+                "name": "Cody Gakpo"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14477,
+                "name": "Denzel Dumfries"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15257,
+                "name": "Tijani Reijnders"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16123,
+                "name": "Joey Veerman"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 18456,
+                "name": "Steven Bergwijn"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 20118,
+                "name": "Wout Weghorst"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 22084,
+                "name": "Brian Brobbey"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 46406,
+                "name": "Mickey van de Ven"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 64279,
+                "name": "Bart Verbruggen"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 67491,
+                "name": "Xavi Simons"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 2684,
+            "name": "Austria",
+            "stadium": "Ernst-Happel-Stadion",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/9e79d7f7cec58998c46f7d3bea198dfc.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1882,
+                "name": "Patrick Pentz"
+              },
+              "shirt_number": "13",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 1904,
+                "name": "Patrick Wimmer"
+              },
+              "shirt_number": "23",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 3289,
+                "name": "Andreas Weimann"
+              },
+              "shirt_number": "24",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6098,
+                "name": "Florian Kainz"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7388,
+                "name": "Philipp Lienhart"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8819,
+                "name": "Stefan Posch"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8820,
+                "name": "Florian Grillitsch"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 8822,
+                "name": "Christoph Baumgartner"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10273,
+                "name": "Gernot Trauner"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11278,
+                "name": "Philipp Mwene"
+              },
+              "shirt_number": "16",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14825,
+                "name": "Marcel Sabitzer"
+              },
+              "shirt_number": "9",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 14830,
+                "name": "Konrad Laimer"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15720,
+                "name": "Maximilian Wober"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16151,
+                "name": "Michael Gregoritsch"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16391,
+                "name": "Marko Arnautovic"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17102,
+                "name": "Kevin Danso"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 19795,
+                "name": "Heinz Lindner"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 29250,
+                "name": "Flavius Daniliuc"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 44539,
+                "name": "Alexander Prass"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 44540,
+                "name": "Nicolas Seiwald"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 46771,
+                "name": "Maximilian Entrup"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 71122,
+                "name": "Marco Grull"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 91387,
+                "name": "Niklas Hedl"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 96307,
+                "name": "Leopold Querfeld"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 108602,
+                "name": "Alexander Schmid"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 115187,
+                "name": "Matthias Seidl"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1439,
+            "name": "France",
+            "stadium": "Stade de France",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/fb2276f0d19f2febd30d074af7f3ea9d.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 196,
+                "name": "Theo Hernandez"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1305,
+                "name": "Jonathan Clauss"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2179,
+                "name": "Ousmane Dembele"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2185,
+                "name": "Antoine Griezmann"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2368,
+                "name": "Kingsley Coman"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2377,
+                "name": "Benjamin Pavard"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2961,
+                "name": "Marcus Thuram"
+              },
+              "shirt_number": "15",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 4328,
+                "name": "N`Golo Kante"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4336,
+                "name": "Olivier Giroud"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9562,
+                "name": "Adrien Rabiot"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10753,
+                "name": "Mike Maignan"
+              },
+              "shirt_number": "16",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 11400,
+                "name": "Benjamin Mendy"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 12033,
+                "name": "Youssouf Fofana"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 12034,
+                "name": "Aurelien Tchouameni"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 12852,
+                "name": "Brice Samba"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 13888,
+                "name": "Kylian Mbappe"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 14829,
+                "name": "Dayot Upamecano"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14833,
+                "name": "Ibrahima Konate"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14978,
+                "name": "Alphonse Areola"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 15084,
+                "name": "Eduardo Camavinga"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15655,
+                "name": "William Saliba"
+              },
+              "shirt_number": "17",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16226,
+                "name": "Jules Kounde"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 31267,
+                "name": "Randal Kolo Muani"
+              },
+              "shirt_number": "12",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 61526,
+                "name": "Bradley Barcola"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 128685,
+                "name": "Warren Zaire-Emery"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1453,
+            "name": "Belgium",
+            "stadium": "Stade Roi Baudouin",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/da2c172761da15d7e1609c234595f538.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 997,
+                "name": "Jeremy Doku"
+              },
+              "shirt_number": "22",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 1494,
+                "name": "Timothy Castagne"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 1640,
+                "name": "Yannick Carrasco"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2923,
+                "name": "Axel Witsel"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3234,
+                "name": "Leandro Trossard"
+              },
+              "shirt_number": "9",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4486,
+                "name": "Lois Openda"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 4498,
+                "name": "Charles De Ketelaere"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 4502,
+                "name": "Maxime De Cuyper"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7691,
+                "name": "Thomas Kaminski"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 8661,
+                "name": "Dodi Lukebakio"
+              },
+              "shirt_number": "14",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9177,
+                "name": "Romelu Lukaku"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 10162,
+                "name": "Aster Vranckx"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10560,
+                "name": "Youri Tielemans"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11389,
+                "name": "Kevin De Bruyne"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13328,
+                "name": "Wout Faes"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 13885,
+                "name": "Thomas Meunier"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17771,
+                "name": "Matz Sels"
+              },
+              "shirt_number": "13",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 18429,
+                "name": "Jan Vertonghen"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 19196,
+                "name": "Orel Mangala"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20105,
+                "name": "Koen Casteels"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 54266,
+                "name": "Amadou Mvom Onana"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 92962,
+                "name": "Arthur Theate"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 105005,
+                "name": "Johan Bakayoko"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 111959,
+                "name": "Zeno Debast"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 129963,
+                "name": "Arthur Vermeeren"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1619,
+            "name": "Slovakia",
+            "stadium": "City Arena Trnava",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/bf6cc450205c0bdc99755686b4ec9254.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1104,
+                "name": "Michal Duris"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2960,
+                "name": "Laszlo Benes"
+              },
+              "shirt_number": "11",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5149,
+                "name": "Henrich Ravas"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 6168,
+                "name": "Tomas Suslov"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6925,
+                "name": "Robert Bozenik"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 7447,
+                "name": "Marek Rodak"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 7632,
+                "name": "Patrik Hrosovsky"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 8637,
+                "name": "Peter Pekarik"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 9165,
+                "name": "Milan Skriniar"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10315,
+                "name": "Denis Vavro"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 12480,
+                "name": "Martin Dubravka"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 12825,
+                "name": "Ondrej Duda"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13916,
+                "name": "Juraj Kucka"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16075,
+                "name": "Lukas Haraslin"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16758,
+                "name": "Ivan Schranz"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17195,
+                "name": "David Hancko"
+              },
+              "shirt_number": "16",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17435,
+                "name": "Stanislav Lobotka"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19355,
+                "name": "Matus Bero"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20070,
+                "name": "Lubomir Tupta"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 68041,
+                "name": "Norbert Gyomber"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 75633,
+                "name": "David Strelec"
+              },
+              "shirt_number": "18",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 75640,
+                "name": "Vernon"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 91287,
+                "name": "Sebastian Kosa"
+              },
+              "shirt_number": "25",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 96754,
+                "name": "Tomas Rigo"
+              },
+              "shirt_number": "5",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 115516,
+                "name": "Adam Obert"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 129737,
+                "name": "Leo Sauer"
+              },
+              "shirt_number": "24",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1743,
+            "name": "Romania",
+            "stadium": "Arena Naţională",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/6e1e39c47d5ed12e313601e1d631b673.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 691,
+                "name": "Razvan Marin"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4167,
+                "name": "Andrei Andonie Burca"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 6750,
+                "name": "Ionut Nedelcearu"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14784,
+                "name": "Ianis Hagi"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 14911,
+                "name": "George Puscas"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16921,
+                "name": "Nicolae Stanciu"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 17174,
+                "name": "Florin Nita"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17656,
+                "name": "Denis Dragus"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 19308,
+                "name": "Andrei Ratiu"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 21286,
+                "name": "Adrian Sut"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 26663,
+                "name": "Denis Alibec"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 36725,
+                "name": "Vasile Mogos"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 37190,
+                "name": "Nicusor Bancu"
+              },
+              "shirt_number": "11",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 37195,
+                "name": "Valentin Mihaila"
+              },
+              "shirt_number": "13",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 37196,
+                "name": "Alexandru Cicaldau"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 37415,
+                "name": "Stefan Tarnovanu"
+              },
+              "shirt_number": "16",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 39181,
+                "name": "Deian Cristian Sorescu"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 43854,
+                "name": "Dennis Man"
+              },
+              "shirt_number": "20",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 43858,
+                "name": "Florinel Coman"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 43875,
+                "name": "Darius Olaru"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 56561,
+                "name": "Radu Dragusin"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 68448,
+                "name": "Marius Marin"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 78936,
+                "name": "George Daniel Birligea"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 83203,
+                "name": "Adrian Rus"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 93266,
+                "name": "Horatiu Moldovan"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 93283,
+                "name": "Bogdan Racovitan"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1744,
+            "name": "Turkey",
+            "stadium": "Atatürk Olimpiyat Stadı",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/42c6b23a162a1d8e9fb3f5982838117f.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 189,
+                "name": "Hakan Calhanoglu"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 3928,
+                "name": "Okay Yokuslu"
+              },
+              "shirt_number": "5",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 4948,
+                "name": "Cenk Tosun"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 6870,
+                "name": "Ferdi Kadioglu"
+              },
+              "shirt_number": "20",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 6887,
+                "name": "Altay Bayindir"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 6910,
+                "name": "Orkun Kokcu"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7313,
+                "name": "Kaan Ayhan"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7475,
+                "name": "Yunus Akgun"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 8865,
+                "name": "Salih Ozcan"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 9330,
+                "name": "Irfan Kahveci"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9334,
+                "name": "Mert Gunok"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 9565,
+                "name": "Merih Demiral"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 9994,
+                "name": "Abdulkerim Bardakci"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10760,
+                "name": "Zeki Celik"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10773,
+                "name": "Yusuf Yazici"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16065,
+                "name": "Mert Muldur"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 18525,
+                "name": "Ugurcan Cakir"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 25429,
+                "name": "Baris Alper Yilmaz"
+              },
+              "shirt_number": "21",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 26363,
+                "name": "Bertug Ozgur Yildirim"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 41641,
+                "name": "Muhammed Kerem Akturkoglu"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 51081,
+                "name": "Ismail Yuksek"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 57284,
+                "name": "Samet Akaydin"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 94522,
+                "name": "Ahmetcan Kaplan"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 113754,
+                "name": "Guler Arda"
+              },
+              "shirt_number": "8",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 132533,
+                "name": "Semih Kılıçsoy"
+              },
+              "shirt_number": "24",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 154005,
+                "name": "Kenan Yildiz"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1437,
+            "name": "Portugal",
+            "stadium": "Estádio Nacional",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/3c73e3c2e48be152f1e87bc4eb296796.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 198,
+                "name": "Rafael Leao"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 1628,
+                "name": "Joao Felix"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2178,
+                "name": "Nelson Semedo"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2471,
+                "name": "Ruben Dias"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 2505,
+                "name": "Goncalo Ramos"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 3074,
+                "name": "Joao Palhinha"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 6560,
+                "name": "Danilo Pereira"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 6569,
+                "name": "Diogo Costa"
+              },
+              "shirt_number": "22",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 6570,
+                "name": "Pepe"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 9559,
+                "name": "Cristiano Ronaldo"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 11396,
+                "name": "Bernardo Silva"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 11405,
+                "name": "Joao Cancelo"
+              },
+              "shirt_number": "20",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11426,
+                "name": "Diogo Dalot"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11449,
+                "name": "Bruno Fernandes"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13202,
+                "name": "Jose Sa"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 17370,
+                "name": "Nuno Mendes"
+              },
+              "shirt_number": "19",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 20136,
+                "name": "Ruben Neves"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20139,
+                "name": "Diogo Jota"
+              },
+              "shirt_number": "21",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 20141,
+                "name": "Rui Patricio"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 20151,
+                "name": "Pedro Neto"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 69157,
+                "name": "Vitinha"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 91179,
+                "name": "Matheus Nunes"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 91910,
+                "name": "Gonçalo Inacio"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 94538,
+                "name": "Francisco Fernandes Conceicao"
+              },
+              "shirt_number": "26",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 119442,
+                "name": "Antonio Silva"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 124747,
+                "name": "Joao Neves"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1722,
+            "name": "Czech Republic",
+            "stadium": "Generali Arena",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/a8f043d41bd9bc4695d44c5df224c504.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 6789,
+                "name": "Vaclav Cerny"
+              },
+              "shirt_number": "17",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9696,
+                "name": "Ondrej Lingr"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10860,
+                "name": "Vitezslav Jaros"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 11438,
+                "name": "Matej Kovar"
+              },
+              "shirt_number": "16",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 11965,
+                "name": "David Doudera"
+              },
+              "shirt_number": "12",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 14478,
+                "name": "Michal Sadilek"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 14848,
+                "name": "Patrik Schick"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16573,
+                "name": "Mojmir Chytil"
+              },
+              "shirt_number": "13",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 16774,
+                "name": "Pavel Sulc"
+              },
+              "shirt_number": "25",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16913,
+                "name": "Vladimir Coufal"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16920,
+                "name": "Tomas Holes"
+              },
+              "shirt_number": "3",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16929,
+                "name": "Lukas Provod"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16932,
+                "name": "David Zima"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17003,
+                "name": "Jan Kuchta"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17180,
+                "name": "Adam Hlozek"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17190,
+                "name": "Ladislav Krejci"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 18814,
+                "name": "Antonin Barak"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19240,
+                "name": "Tomas Chory"
+              },
+              "shirt_number": "19",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 19256,
+                "name": "Jindrich Stanek"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 19919,
+                "name": "Tomas Soucek"
+              },
+              "shirt_number": "22",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 46635,
+                "name": "David Jurasek"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 82015,
+                "name": "Tomas Vlcek"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 83351,
+                "name": "Robin Hranac"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 91399,
+                "name": "Lukas Cerv"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 96151,
+                "name": "Martin Vitik"
+              },
+              "shirt_number": "6",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 96753,
+                "name": "Matej Jurasek"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1459,
+            "name": "Poland",
+            "stadium": "Stadion Narodowy",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/a7215578f3c4b487600bac9ea7567f49.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 440,
+                "name": "Damian Szymanski"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 2365,
+                "name": "Robert Lewandowski"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 2813,
+                "name": "Lukasz Skorupski"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 3542,
+                "name": "Sebastian Walukiewicz"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 8521,
+                "name": "Pawel Dawidowicz"
+              },
+              "shirt_number": "3",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 8664,
+                "name": "Krzysztof Piatek"
+              },
+              "shirt_number": "23",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9386,
+                "name": "Taras Romanczuk"
+              },
+              "shirt_number": "13",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 9555,
+                "name": "Wojciech Szczesny"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 10396,
+                "name": "Jakub Moder"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10397,
+                "name": "Tymoteusz Puchacz"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 10408,
+                "name": "Michal Skoras"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 10436,
+                "name": "Kacper Urbanski"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 13831,
+                "name": "Karol Swiderski"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 13894,
+                "name": "Marcin Bulka"
+              },
+              "shirt_number": "22",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 15728,
+                "name": "Bartosz Bereszynski"
+              },
+              "shirt_number": "18",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17088,
+                "name": "Jan Bednarek"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17144,
+                "name": "Bartosz Salamon"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17415,
+                "name": "Piotr Zielinski"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19665,
+                "name": "Jakub Piotrowski"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 19888,
+                "name": "Kamil Grosicki"
+              },
+              "shirt_number": "11",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20413,
+                "name": "Bartosz Slisz"
+              },
+              "shirt_number": "24",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 34969,
+                "name": "Przemyslaw Frankowski"
+              },
+              "shirt_number": "19",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 64925,
+                "name": "Adam Buksa"
+              },
+              "shirt_number": "16",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 85435,
+                "name": "Jakub Kiwior"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 86231,
+                "name": "Sebastian Szymanski"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 96085,
+                "name": "Nicola Zalewski"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 1618,
+            "name": "Ukraine",
+            "stadium": "NSK Olimpijs'kyj",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/98fae53e8212005727ac851420eae704.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1501,
+                "name": "Ruslan Malinovskyi"
+              },
+              "shirt_number": "8",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5173,
+                "name": "Yukhym Konoplia"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5452,
+                "name": "Serhiy Sydorchuk"
+              },
+              "shirt_number": "5",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5453,
+                "name": "Viktor Tsygankov"
+              },
+              "shirt_number": "15",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5457,
+                "name": "Georgiy Bushchan"
+              },
+              "shirt_number": "1",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 5463,
+                "name": "Mykola Shaparenko"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5464,
+                "name": "Vitaliy Mykolenko"
+              },
+              "shirt_number": "16",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7682,
+                "name": "Roman Yaremchuk"
+              },
+              "shirt_number": "9",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 9679,
+                "name": "Mykhailo Mudryk"
+              },
+              "shirt_number": "10",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 11397,
+                "name": "Olexandr Zinchenko"
+              },
+              "shirt_number": "17",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 15008,
+                "name": "Andriy Lunin"
+              },
+              "shirt_number": "23",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 16102,
+                "name": "Oleksandr Svatok"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16240,
+                "name": "Taras Stepanenko"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 16251,
+                "name": "Mykola Matvienko"
+              },
+              "shirt_number": "22",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16259,
+                "name": "Anatolii Trubin"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 16260,
+                "name": "Valerii Bondar"
+              },
+              "shirt_number": "21",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 16773,
+                "name": "Maksym Talovierov"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 17073,
+                "name": "Artem Dovbyk"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 19904,
+                "name": "Andriy Yarmolenko"
+              },
+              "shirt_number": "7",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 20544,
+                "name": "Bogdan Mykhaylichenko"
+              },
+              "shirt_number": "26",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 20554,
+                "name": "Oleksandr Tymchyk"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 46910,
+                "name": "Oleksandr Zubkov"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 74291,
+                "name": "Georgiy Sudakov"
+              },
+              "shirt_number": "14",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 87901,
+                "name": "Illia Zabarnyi"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 98491,
+                "name": "Vladyslav Vanat"
+              },
+              "shirt_number": "25",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 139891,
+                "name": "Volodymyr Brazhko"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            }
+          ]
+        },
+        {
+          "team": {
+            "id": 2682,
+            "name": "Georgia",
+            "stadium": "Boris Paichadze Dinamo Arena",
+            "country_id": 115,
+            "logo": "https://cdn.live-score-api.com/teams/b225282901b18b53e4d96b5891a7fb2c.png"
+          },
+          "squad": [
+            {
+              "player": {
+                "id": 1093,
+                "name": "Saba Lobzhanidze"
+              },
+              "shirt_number": "23",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 1120,
+                "name": "Giorgi Loria"
+              },
+              "shirt_number": "1",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 5470,
+                "name": "Heorhii Tsitaishvili"
+              },
+              "shirt_number": "21",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 5480,
+                "name": "Luka Lochoshvili"
+              },
+              "shirt_number": "14",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 6749,
+                "name": "Jemal Tabidze"
+              },
+              "shirt_number": "24",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 7683,
+                "name": "Giorgi Chakvetadze"
+              },
+              "shirt_number": "10",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 7688,
+                "name": "Giorgi Kvilitaia"
+              },
+              "shirt_number": "11",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 10000,
+                "name": "Levan Shengelia"
+              },
+              "shirt_number": "19",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 10900,
+                "name": "Saba Kverkvelia"
+              },
+              "shirt_number": "5",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11118,
+                "name": "Kakabadze"
+              },
+              "shirt_number": "2",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 11737,
+                "name": "Georges Mikautadze"
+              },
+              "shirt_number": "22",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 15576,
+                "name": "Zurab Davitashvili"
+              },
+              "shirt_number": "9",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 15577,
+                "name": "Khvicha Kvaratskhelia"
+              },
+              "shirt_number": "7",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 17832,
+                "name": "Otar Kiteishvili"
+              },
+              "shirt_number": "17",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 39118,
+                "name": "Luka Gugeshashvili"
+              },
+              "shirt_number": "12",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 39267,
+                "name": "Anzor Mekvabishvili"
+              },
+              "shirt_number": "20",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 39269,
+                "name": "Giorgi Mamardashvili"
+              },
+              "shirt_number": "25",
+              "position": "GK"
+            },
+            {
+              "player": {
+                "id": 46902,
+                "name": "Lasha Dvali"
+              },
+              "shirt_number": "3",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 62855,
+                "name": "Budu Zivzivadze"
+              },
+              "shirt_number": "8",
+              "position": "FW"
+            },
+            {
+              "player": {
+                "id": 72132,
+                "name": "Sandro Altunashvili"
+              },
+              "shirt_number": "18",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 72568,
+                "name": "Guram Kashia"
+              },
+              "shirt_number": "4",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 79292,
+                "name": "Nika Kvekveskiri"
+              },
+              "shirt_number": "16",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 91350,
+                "name": "Giorgi Kochorashvili"
+              },
+              "shirt_number": "6",
+              "position": "MF"
+            },
+            {
+              "player": {
+                "id": 93796,
+                "name": "Giorgi Gocholeishvili"
+              },
+              "shirt_number": "13",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 94635,
+                "name": "Giorgi Gvelesiani"
+              },
+              "shirt_number": "15",
+              "position": "DF"
+            },
+            {
+              "player": {
+                "id": 132807,
+                "name": "Gabriel Sigua"
+              },
+              "shirt_number": "26",
+              "position": "MF"
+            }
+          ]
+        }
+      ]
+    }
+  }

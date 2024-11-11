@@ -1,115 +1,13 @@
+from flask import Flask, render_template, url_for, request, redirect, flash, g, session
+from flask import jsonify 
 from datetime import datetime, timedelta
-import sqlite3
-from flask import Flask, render_template, url_for, request, redirect, flash, g, session 
-import random
-import string
-import hashlib
-import binascii
-
-app_info = {
-    'db_file' : './data/bets_euro24.db',
-    'bonus_deadline' : '14-06-2024 20:55',
-    'time_zone_offset' : +2 #differences in hours between server datetime and match datetime (tells how much hours do we need to add to the server time)
-}
-
-time_zone_offset=app_info['time_zone_offset']
+import requests
+import json
 
 app = Flask(__name__)
 app.config['SECRET_KEY']='a_secret_string'
 
-
-def get_db():
-    if not hasattr(g, 'sqlite_db'):
-        conn = sqlite3.connect(app_info['db_file'])
-        conn.row_factory = sqlite3.Row
-        g.sqlite_db = conn
-    return g.sqlite_db
-
-@app.teardown_appcontext
-def close_db(error):
-    if hasattr(g, 'sqlite.db'):
-        g.sqlite_db.close()
-
-class UserPass:
-    def __init__(self, user='', password=''):
-        self.user = user
-        self.password = password
-        self.email = ''
-        self.is_valid = False
-        self.is_admin = False
-        self.id = -1
-
-    def hash_password(self):
-        """Hash a password for storing."""
-        # the value generated using os.urandom(60)
-        os_urandom_static = b"ID_\x12p:\x8d\xe7&\xcb\xf0=H1\xc1\x16\xac\xe5BX\xd7\xd6j\xe3i\x11\xbe\xaa\x05\xccc\xc2\xe8K\xcf\xf1\xac\x9bFy(\xfbn.`\xe9\xcd\xdd'\xdf`~vm\xae\xf2\x93WD\x04"
-        salt = hashlib.sha256(os_urandom_static).hexdigest().encode('ascii')
-        pwdhash = hashlib.pbkdf2_hmac('sha512', self.password.encode('utf-8'), salt, 100000)
-        pwdhash = binascii.hexlify(pwdhash)
-        return (salt + pwdhash).decode('ascii')     
-    
-    def verify_password(self, stored_password, provided_password):
-        """Verify a stored password against one provided by user"""
-        salt = stored_password[:64]
-        stored_password = stored_password[64:]
-        pwdhash = hashlib.pbkdf2_hmac('sha512', provided_password.encode('utf-8'),
-        salt.encode('ascii'), 100000)
-        pwdhash = binascii.hexlify(pwdhash).decode('ascii')
-        return pwdhash == stored_password
-
-    def get_random_user_pasword(self):
-        random_user = ''.join(random.choice(string.ascii_lowercase)for i in range(5))
-        self.user = random_user
-        password_characters = string.ascii_letters #+ string.digits + string.punctuation
-        random_password = ''.join(random.choice(password_characters)for i in range(5))
-        self.password = random_password
-
-
-    def login_user(self):
-        db = get_db()
-        sql_statement = 'select id, name, email, password, is_active, is_admin from users where name=?'
-        cur = db.execute(sql_statement, [self.user])
-        user_record = cur.fetchone()
-
-        if user_record != None and self.verify_password(user_record['password'], self.password):
-            return user_record
-        else:
-            self.user = None
-            self.password = None
-            return None
-
-    def get_user_info(self):
-        db = get_db()
-        sql_statement = 'select id, name, email, is_active, is_admin from users where name=?'
-        cur = db.execute(sql_statement, [self.user])
-        db_user = cur.fetchone()
-
-        if db_user == None:
-            self.is_valid = False
-            self.is_admin = False
-            self.email = ''
-            self.id = -1
-        elif db_user['is_active'] != 1:
-            self.is_valid = False
-            self.is_admin = False
-            self.email = ''
-            self.id = -1
-        else:
-            self.is_valid = True
-            self.is_admin = db_user['is_admin']
-            self.email = db_user['email']
-            self.id = db_user['id']
-
-sql_select = 'select * from v_user_matches where user_id=?'
-sql_select_ranking = 'select * from v_rank'
-sql_match_date = 'select min(match_date) as match_dt_check from v_user_matches where disabled=""'
-sql_select_results = f'select * from v_user_matches where match_date_oryg < datetime("now","{time_zone_offset} hour") order by match_group, match_id, name'
-sql_select_live = 'select * from v_user_matches_live where substr(match_date,1,10) = strftime("%d-%m-%Y",date()) and match_id not in (select id from matches where team1_res >=0) and user_id=?'
-sql_select_ranking_live ='select * from v_rank_live'
-sql_select_teams = 'select distinct team from (select team1 as team from matches union select team2 as team from matches)'
-sql_select_bonus_champion = 'select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name="Champion" and user_id=?'
-sql_select_bonus_topscorer = 'select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name="Topscorer" and user_id=?'
-sql_select_user_bonuses ='select * from v_user_bonuses'
+from bets_db import *
 
 ###########################################################################
 ###############             EURO2024 BETS          ########################
@@ -134,7 +32,7 @@ def matches():
     else:
 
         #match_dt_check - przechowuje date startu najwczesniejszego meczu ktory został poddany edycji...
-        #                  ...na wypadek gdyby uzytkownik otworzyl formularz do edyci przed deadline ale zapisal do deadline    
+        #                  ...na wypadek gdyby uzytkownik otworzyl formularz do edycji przed deadline ale zapisal po deadline    
         match_dt_check = session.get('match_dt_check')
         if match_dt_check: 
             print(datetime.strptime(match_dt_check,'%d-%m-%Y %H:%M'))
@@ -358,6 +256,73 @@ def edit_bonus():
     topscorer = cur.fetchone()
 
     return render_template('bet_edit_bonuses.html', teams=teams, active_bonuses='active', login=login, champion=champion, topscorer=topscorer)
+    # return render_template('index.html', teams=teams, active_bonuses='active', login=login, champion=champion, topscorer=topscorer)
+
+@app.route("/squad",methods=["POST","GET"])
+def carbrand():  
+    
+    login = UserPass(session.get('user'))
+    login.get_user_info()
+    if not login.is_valid:
+        return redirect(url_for('login')) 
+    
+
+    
+    if request.method == 'POST':
+        # url = "https://livescore-api.com/api-client/competitions/rosters.json?"
+        # querystring = {"competition_id":"387", "secret":"fa8h9mV7PzFobjvusVZq5Lvgls5WB5GQ", "key":"j9puXaM4bAXOB90J"}
+        # headers = {}
+
+        # response = requests.get(url, headers=headers, params=querystring)
+        # response_json = response.json()
+
+        # Open and read the JSON file
+        with open('./data/team_squads.json', 'r') as file:
+            response_json = json.load(file)
+
+        team = request.form['team']
+        print(team)
+        x = next(item for item in response_json["data"]["teams"] if item["team"]["name"] == team)
+        index = 0
+        OutputArray = []
+        while index < len (x["squad"]):
+            # print(x["squad"][index]["player"]["name"])
+            outputObj = {
+                'id': index+1,
+                'name': x["squad"][index]["player"]["name"]}
+            OutputArray.append(outputObj)
+            index += 1
+
+    #print(OutputArray)
+    # return jsonify(OutputArray)
+    return OutputArray
+
+####################################
+# API
+####################################
+from flask_restful import Resource, Api
+import json
+api = Api(app)
+
+
+sql_select_apiranking = 'select rank, nick, points from v_rank'
+class APIRanking(Resource):
+    def get(self, place):
+        db = get_db()
+        cur = db.execute(sql_select_apiranking)
+        
+        rows=cur.fetchall()
+
+        columns = [col[0] for col in cur.description]
+        data = [dict(zip(columns,row)) for row in rows]
+
+        #to_json = json.dumps(data, indent=2)
+        #print(to_json)
+        return data[place]  
+
+api.add_resource(APIRanking, '/apiranking/<int:place>')
+
+
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0', port = 3000, debug = True)
@@ -367,3 +332,4 @@ if __name__ == '__main__':
 #TODO:
 #4/ audyt (tabele archive, lub rekordy wersjonowane)
 #6/ automatycznie zakladanoe kont/odzyskiwanie hasel
+
