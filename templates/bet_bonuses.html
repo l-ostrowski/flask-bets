@@ -28,9 +28,10 @@
 
 <br><br>
 
+{% if bonus_bet_enabled == 0 %}
 <div class="container">
     <table class="table" id="myTab">
- 
+      
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -40,7 +41,7 @@
           </tr>
         </thead>
 
-        {% if bonus_bet_enabled == 0 %}
+        
         <tbody>
             {% for m in users_bonuses %}
           <tr>
@@ -51,8 +52,9 @@
           </tr>
             {% endfor %}
         </tbody>
-        {% endif %} 
+        
       </table>
 </div>
+{% endif %} 
 
 {% endblock %}

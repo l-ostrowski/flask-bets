@@ -4,8 +4,29 @@ import hashlib
 import binascii
 from bets import app
 
+#------Azure Vault
+from azure.keyvault.secrets import SecretClient
+from azure.identity import DefaultAzureCredential, CredentialUnavailableError
+#import logging
+
+credentials = DefaultAzureCredential()
+vault_url = "https://kv-azure-vault.vault.azure.net/"
+secret_name = "flask-bets-dbfile"
+
+secret_client = SecretClient(vault_url= vault_url, credential= credentials)
+
+secret = '0'
+try:
+    secret = secret_client.get_secret(secret_name)
+    db_file = secret.value
+    print("db_file retrieved from Azure Vault: " + db_file)
+except:
+     db_file = './data/bets_euro24.db'
+     print("Secret was not retrieved. Hardcoded db_file will be used: " + db_file)   
+#------Azure Vault
+
 app_info = {
-    'db_file' : './data/bets_euro24.db',
+    'db_file' : db_file,
     'bonus_deadline' : '14-06-2025 20:55',
     'time_zone_offset' : +2 #differences in hours between server datetime and match datetime 
                             #(tells how much hours do we need to add to the server time)

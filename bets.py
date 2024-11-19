@@ -331,5 +331,5 @@ if __name__ == '__main__':
 
 #TODO:
 #4/ audyt (tabele archive, lub rekordy wersjonowane)
-#6/ automatycznie zakladanoe kont/odzyskiwanie hasel
+#6/ automatycznie zakladanie kont/odzyskiwanie hasel
 
