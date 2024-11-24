@@ -2,3 +2,5 @@ flask==3.0.3
 gunicorn==22.0.0
 Flask-RESTful==0.3.10
 requests==2.32.3
+azure-identity==1.19.0
+azure-keyvault-secrets==4.9.0
