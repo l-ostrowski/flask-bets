@@ -7,7 +7,9 @@ from bets import app
 #------Azure Vault
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential, CredentialUnavailableError
-#import logging
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.info('Hello! App was started')
 
 credentials = DefaultAzureCredential()
 vault_url = "https://kv-azure-vault.vault.azure.net/"
@@ -19,11 +21,15 @@ secret = '0'
 try:
     secret = secret_client.get_secret(secret_name)
     db_file = secret.value
-    print("db_file retrieved from Azure Vault: " + db_file)
+    logging.info("db_file retrieved from Azure Vault:"  + db_file) 
+    #print("db_file retrieved from Azure Vault: " + db_file)
 except:
      db_file = './data/bets_euro24.db'
-     print("Secret was not retrieved. Hardcoded db_file will be used: " + db_file)   
+     logging.info("Secret was not retrieved. Hardcoded db_file will be used: " + db_file)
+     #print("Secret was not retrieved. Hardcoded db_file will be used: " + db_file)   
 #------Azure Vault
+
+#db_file = './data/bets_euro24.db'
 
 app_info = {
     'db_file' : db_file,
