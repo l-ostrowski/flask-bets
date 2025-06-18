@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:13.4
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - 5432:5432
+    volumes:
+      - ./bets_model_postgres.sql:/docker-entrypoint-initdb.d/1_bets_model_postgres.sql
+      - ./bets_euro24_inserts.sql:/docker-entrypoint-initdb.d/2_bets_euro24_inserts.sql

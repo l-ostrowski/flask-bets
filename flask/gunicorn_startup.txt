@@ -1,0 +1,2 @@
+#gunicorn --bind=0.0.0.0 bets:app
+gunicorn --bind=0.0.0.0 create_app:app
