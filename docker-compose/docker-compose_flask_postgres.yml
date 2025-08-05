@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres/bets_model_postgres.sql:/docker-entrypoint-initdb.d/1_bets_model_postgres.sql
+      - ./flask/betsapp/data/bets_euro24_inserts.sql:/docker-entrypoint-initdb.d/2_bets_euro24_inserts.sql
+
+  flask:
+      container_name: flask
+      build: ./flask
+      image: flask
+      command: python -m flask --app create_app.py run --host=0.0.0.0 --port=80 --debug
+      environment:
+        FLASK_AZURE_KEY_VAULT: False
+        FLASK_CONFIG_FILE: DevelopmentConfig
+        PYTHONUNBUFFERED: True
+      ports:
+        - 3000:80    
+      links: 
+          - postgres

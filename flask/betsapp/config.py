@@ -1,7 +1,7 @@
 from flask import current_app
 
 class Config(object):
-    SECRET_KEY = "c874b801a7caf1be80c5ff8900a3dad08c7de89c"
+    #SECRET_KEY = "c874b801a7caf1be80c5ff8900a3dad08c7de89c"
     DATA_FOLDER = "./betsapp/data/"
     DB_FILE = "bets_euro24_closed.db"
     BONUS_DEADLINE = '14-06-2024 20:55'
@@ -19,7 +19,7 @@ class TestingConfig(Config):
     pass
 
 class DevelopmentConfig(Config):
-    BONUS_DEADLINE = '20-06-2025 20:55'
+    BONUS_DEADLINE = '20-06-2026 20:55'
     DB_FILE = "bets_euro24.db"
     POSTGRES_HOST = "postgres"
 
@@ -31,17 +31,16 @@ def AzureKV(app):
     #logging.info('Hello! App was started')
 
     credentials = DefaultAzureCredential()
-    vault_url = "https://kv-azure-vault.vault.azure.net/"
+    vault_url = "https://flaskbet-akv.vault.azure.net/"
     secret_name = "flask-bets-dbfile"
 
     secret_client = SecretClient(vault_url= vault_url, credential= credentials)
 
-    secret = '0'
     try:
         secret = secret_client.get_secret(secret_name)
-        db_file = secret.value
+        app.config["DB_FILE"] = secret.value
         #logging.info("db_file retrieved from Azure Vault:"  + db_file) 
-        print("db_file retrieved from Azure Vault: " + db_file)
+        print("db_file retrieved from Azure Vault: " + app.config["DB_FILE"] )
     except:
         #db_file = './data/bets_euro24.db'
         #logging.info("Secret was not retrieved. Hardcoded db_file will be used: " + db_file)

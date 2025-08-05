@@ -1,0 +1,28 @@
+apiVersion: 2019-12-01
+location: polandcentral
+name: postgres 
+properties:
+  containers:
+  - name: postgres
+    properties:
+      image: postgres
+      environmentVariables:
+        - name: POSTGRES_DB
+          value: postgres
+        - name: POSTGRES_USER 
+          value: postgres
+        - name: POSTGRES_PASSWORD
+          value: mysecretpassword
+      ports:
+        - port: 5432
+      resources:
+        requests:
+          cpu: 1.0
+          memoryInGB: 1.5   
+  osType: Linux
+  restartPolicy: Never
+  ipAddress:
+    type: Public
+    ports:
+    - port: 5432
+type: Microsoft.ContainerInstance/containerGroups

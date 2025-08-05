@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres/bets_model_postgres.sql:/docker-entrypoint-initdb.d/1_bets_model_postgres.sql
+      - ./flask/betsapp/data/bets_euro24_inserts.sql:/docker-entrypoint-initdb.d/2_bets_euro24_inserts.sql
+
+  nginx:
+    container_name: nginx 
+    build: ./nginx
+    restart: always
+    ports:
+     - "3000:80"
+
+  flask:
+      container_name: flask
+      build: ./flask
+      command: gunicorn --bind=0.0.0.0:8000 create_app:app
+      environment:
+        FLASK_AZURE_KEY_VAULT: False
+        FLASK_CONFIG_FILE: DevelopmentConfig
+        PYTHONUNBUFFERED: True   
+      links: 
+          - nginx
+          - postgres  

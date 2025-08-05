@@ -91,7 +91,7 @@ class UserPass:
 
     def login_user(self):
         db = get_db()
-        if 1== 1:
+        if current_app.config["DB_ENGINE"] == "SQLite3":
             sql_statement = 'select id, name, email, password, is_active, is_admin from users where name=?'
             cur = db.execute(sql_statement, [self.user])
             user_record = cur.fetchone()
@@ -151,20 +151,18 @@ def sqls():
             "sql_select_user_bonuses" : 'select * from v_user_bonuses',
             "sql_select_test" : 'select id, team2 from matches where team1 = ? union select id, team1 from matches where team2 = ?'
         }
-        return sql_dict
     else:
-        def sqls():
-            sql_dict = {
-                "sql_select" : 'select * from v_user_matches where user_id=%s order by match_date_oryg',
-                "sql_select_ranking" : 'select * from v_rank',
-                "sql_match_date" : "select min(match_date) as match_dt_check from v_user_matches where disabled=''",
-                "sql_select_results" : f"select * from v_user_matches where match_date_oryg < now() + make_interval(hours => cast(current_setting('my.TIME_ZONE_OFFSET') as integer)) order by /*match_group,*/ match_id, name",
-                "sql_select_live" : "select * from v_user_matches_live where substr(match_date,1,10) = to_char(now(), 'DD-MM-YYYY') /*and match_id not in (select id from matches where team1_res >=0)*/ and user_id=%s",
-                "sql_select_ranking_live" :'select * from v_rank_live',
-                "sql_select_teams" : 'select distinct team from (select team1 as team from matches union select team2 as team from matches)',
-                "sql_select_bonus_champion" : "select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name='Champion' and user_id=%s",
-                "sql_select_bonus_topscorer" : "select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name='Topscorer' and user_id=%s",
-                "sql_select_user_bonuses" : 'select * from v_user_bonuses',
-                "sql_select_test" : 'select id, team2 from matches where team1 = %s union select id, team1 from matches where team2 = %s'
-            }
-        return sql_dict
+        sql_dict = {
+            "sql_select" : 'select * from v_user_matches where user_id=%s order by match_date_oryg',
+            "sql_select_ranking" : 'select * from v_rank',
+            "sql_match_date" : "select min(match_date) as match_dt_check from v_user_matches where disabled=''",
+            "sql_select_results" : f"select * from v_user_matches where match_date_oryg < now() + make_interval(hours => cast(current_setting('my.TIME_ZONE_OFFSET') as integer)) order by /*match_group,*/ match_id, name",
+            "sql_select_live" : "select * from v_user_matches_live where substr(match_date,1,10) = to_char(now(), 'DD-MM-YYYY') /*and match_id not in (select id from matches where team1_res >=0)*/ and user_id=%s",
+            "sql_select_ranking_live" :'select * from v_rank_live',
+            "sql_select_teams" : 'select distinct team from (select team1 as team from matches union select team2 as team from matches)',
+            "sql_select_bonus_champion" : "select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name='Champion' and user_id=%s",
+            "sql_select_bonus_topscorer" : "select bonus_id, bonus_name, bonus_bet from v_user_bonuses where bonus_name='Topscorer' and user_id=%s",
+            "sql_select_user_bonuses" : 'select * from v_user_bonuses',
+            "sql_select_test" : 'select id, team2 from matches where team1 = %s union select id, team1 from matches where team2 = %s'
+        }
+    return sql_dict

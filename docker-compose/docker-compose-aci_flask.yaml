@@ -1,0 +1,34 @@
+apiVersion: 2019-12-01
+location: polandcentral
+name: betswithpostgres 
+properties:
+  containers:
+  - name: flask
+    properties:
+      image: campnou/flask-bets-postgres
+      command: 
+        - gunicorn
+        - --bind=0.0.0.0:80
+        - create_app:app
+      environmentVariables:
+        - name: FLASK_AZURE_KEY_VAULT
+          value: False
+        - name: FLASK_CONFIG_FILE 
+          value: DevelopmentConfig
+        - name: PYTHONUNBUFFERED
+          value: True
+        - name: FLASK_POSTGRES_HOST 
+          value: 74.248.141.234
+      ports:
+        - port: 80
+      resources:
+        requests:
+          cpu: 1.0
+          memoryInGB: 1.5   
+  osType: Linux
+  restartPolicy: Never
+  ipAddress:
+    type: Public
+    ports:
+    - port: 80
+type: Microsoft.ContainerInstance/containerGroups
