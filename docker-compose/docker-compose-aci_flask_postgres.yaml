@@ -56,5 +56,5 @@ properties:
     azureFile:
      sharename: postgres-startup-scripts
      storageAccountName: flaskbets
-     storageAccountKey: <your_storage_account_key>
+     <your_storage_account_key>
 type: Microsoft.ContainerInstance/containerGroups
